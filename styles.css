@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -7,22 +7,88 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #5856D6;
     color: white;
-    padding: 1em 0;
-    text-align: center;
+    padding: 32px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    letter-spacing: -1.2px;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 8px;
+    margin-top: 0;
+}
+
+header .authors {
+    padding-top: 32px;
+    padding-left: 8px;
 }
 
 main {
-    padding: 1em;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+main .left-column, main .right-column {
+    flex: 1 1 calc(50% - 23px);
+    box-sizing: border-box;
+}
+
+main .left-column .box {
+    margin-bottom: 37px;
+}
+
+main .right-column .box {
+    margin-top: 0;
+}
+
+main .box {
+    background-color: #BCBCE4;
+    border: none;
+    padding: 16px;
+    box-sizing: border-box;
+    margin:0;
+    border-radius: 15px;
+}
+
+main .box h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+main .box p {
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+@media (max-width: 1600px) {
+    main {
+        gap: 0;
+    }
+    main .left-column, main .right-column {
+        flex: 1 1 100%;
+    }
+    main .left-column .box {
+        margin-bottom: 37px;
+    }
+    main .right-column .box {
+        margin-top: 46px;
+    }
 }
