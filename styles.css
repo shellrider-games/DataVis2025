@@ -59,7 +59,7 @@ main .right-column .box {
 main .box {
     background-color: #BCBCE4;
     border: none;
-    padding: 16px;
+    padding: 32px;
     box-sizing: border-box;
     margin:0;
     border-radius: 15px;
@@ -75,6 +75,13 @@ main .box p {
     font-size: 16px;
     margin-top: 8px;
     font-weight: 400;
+}
+
+main .box iframe {
+    background-color: #ffffff;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 48px;
 }
 
 @media (max-width: 1400px) {
