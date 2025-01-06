@@ -77,7 +77,7 @@ main .box p {
     font-weight: 400;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
     main {
         gap: 0;
     }
